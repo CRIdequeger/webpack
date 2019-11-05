@@ -31,19 +31,19 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: 'Component name',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
+      message: 'Component description',
       default: 'A Vue.js project',
     },
     author: {
@@ -51,7 +51,7 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
-    build: {
+    /*build: {
       when: 'isNotTest',
       type: 'list',
       message: 'Vue build',
@@ -68,18 +68,18 @@ module.exports = {
           short: 'runtime',
         },
       ],
-    },
-    router: {
+    },*/
+    /*router: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Install vue-router?',
-    },
-    lint: {
+    },*/
+    /*lint: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
-    },
-    lintConfig: {
+    },*/
+    /*lintConfig: {
       when: 'isNotTest && lint',
       type: 'list',
       message: 'Pick an ESLint preset',
@@ -100,13 +100,13 @@ module.exports = {
           short: 'none',
         },
       ],
-    },
-    unit: {
+    },*/
+    /*unit: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Set up unit tests',
-    },
-    runner: {
+    },*/
+    /*runner: {
       when: 'isNotTest && unit',
       type: 'list',
       message: 'Pick a test runner',
@@ -127,12 +127,12 @@ module.exports = {
           short: 'noTest',
         },
       ],
-    },
-    e2e: {
+    },*/
+    /*e2e: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
-    },
+    },*/
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
